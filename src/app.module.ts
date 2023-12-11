@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
 import { PlayersModule } from './players/players.module';
-import { MongooseModule } from '@nestjs/mongoose';
 import { CategoriesModule } from './categories/categories.module';
+import { InfraModule } from './infra/infra.module';
 
 @Module({
-  imports: [PlayersModule, CategoriesModule],
+  imports: [InfraModule, PlayersModule, CategoriesModule],
   controllers: [],
   providers: [],
 })
